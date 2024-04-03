@@ -45,7 +45,7 @@ const SearchableDropdown = () => {
 
       <div className="md:w-[200px] lg:w-[300px]  w-full  mt-12 absolute opacity-90 bg-gray-100 rounded-md max-h-[400px] overflow-y-auto overflow-x-hidden scroll ">
         {searchTerm != "" && (
-          <div className="  cursor-pointer  w-[300px]">
+          <div className="  cursor-pointer  w-full">
             {searchTerm.length > 0 &&
               options.meals &&
               options.meals.map((item) => (

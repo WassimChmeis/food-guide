@@ -20,6 +20,7 @@ const Home = () => {
       <div className=" font-Madimi px-3 md:px-6">
         <div className=" pt-3"></div>
         <Hero />
+        <div className="mb-8 border-b-2"></div>
         <Categories />
       </div>
       <div className=" my-56"></div>
