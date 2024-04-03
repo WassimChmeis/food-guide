@@ -25,7 +25,7 @@ const Categories = () => {
 
   return (
     <>
-      <div className=" w-full px-6 flex flex-col justify-center items-center ">
+      <div className=" w-full  flex flex-col justify-center items-center ">
         <h1 className=" text-[34px]"> Categories</h1>
         <div className="my-16"></div>
         <div className="flex flex-wrap gap-7 justify-center items-center z-10">
