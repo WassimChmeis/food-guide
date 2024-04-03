@@ -26,7 +26,7 @@ const Card = ({ data }) => {
     >
       <Link to={`/category/${data.strCategory}`}>
         <div
-          className=" rounded-xl sm:w-[300px] max-w-64 sm:max-w-72 h-[356px] p-4 bg-[#f8f8f8]   "
+          className=" rounded-xl sm:w-[300px] max-w-[270px] sm:max-w-72 h-[356px] p-4 bg-[#f8f8f8]   "
           key={data.strCategory + data.idCategory}
         >
           {/* <div className="text-[#ff3c3c]">
