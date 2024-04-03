@@ -68,7 +68,7 @@ const Category = () => {
       />
       <div className="bg-[#f8f8f8] font-Madimi ">
         <div className="py-8"></div>
-        <div className=" flex mx-10 gap-8  my-20   ">
+        <div className=" flex mx-4 md:mx-10 gap-8  my-20   ">
           <div className=" text-center md:text-start md:w-1/2">
             <h1 className=" mb-5 text-[40px]">{id}</h1>
             <p className="text-[#706f7b] font-minor">
@@ -139,7 +139,7 @@ const Category = () => {
             )}
           </div>
         </div>
-        <div className="border-t-2 flex flex-col items-center mx-8 ">
+        <div className="border-t-2 flex flex-col items-center mx-4 md:mx-8 ">
           <h1 className="mt-10 text-[30px]">
             Explore <span className="text-red-500">{id}</span> Recipes
           </h1>

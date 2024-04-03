@@ -17,7 +17,7 @@ const Home = () => {
         bgColor={"bg-[#f8f8f8]"}
         list={["Home", "About", "Project", "Contact"]}
       />
-      <div className=" font-Madimi px-6">
+      <div className=" font-Madimi px-3 md:px-6">
         <div className=" pt-3"></div>
         <Hero />
         <Categories />
