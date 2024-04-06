@@ -5,9 +5,12 @@ import { FaConnectdevelop } from "react-icons/fa";
 import { IoFastFood } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import SearchableDropdown from "./SearchableDropdown";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = ({ list, bgColor, searchableInput }) => {
   const [nav, setNav] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleNav = () => {
     setNav(!nav);
@@ -15,10 +18,14 @@ const Navbar = ({ list, bgColor, searchableInput }) => {
 
   const handleClick = (event, sectionId) => {
     event.preventDefault();
-    const section = document.getElementById(sectionId);
-    setNav(!nav);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+    // const section = document.getElementById(sectionId);
+    // setNav(!nav);
+    // if (section) {
+    //   section.scrollIntoView({ behavior: "smooth" });
+    // }
+    console.log(event.target.text);
+    if (event.target.text === "Home") {
+      navigate("/");
     }
   };
 
