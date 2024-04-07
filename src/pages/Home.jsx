@@ -12,7 +12,7 @@ import Categories from "../components/Categories";
 
 const Home = () => {
   return (
-    <div className="bg-[#f8f8f8]">
+    <div className=" min-h-screen bg-[#f8f8f8]">
       <Navbar
         bgColor={"bg-[#f8f8f8]"}
         list={["Home", "About", "Project", "Contact"]}

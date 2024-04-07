@@ -40,7 +40,7 @@ const Dish = () => {
   }, [id]);
 
   return (
-    <div>
+    <div className=" min-h-screen">
       <Navbar
         bgColor={"bg-[#f8f8f8]"}
         list={["Home", "About", "Project", "Contact"]}
