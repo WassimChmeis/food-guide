@@ -61,7 +61,7 @@ const Category = () => {
   }, []);
 
   return (
-    <>
+    <div className=" min-h-screen">
       <Navbar
         bgColor={"bg-[#f8f8f8]"}
         list={["Home", "About", "Project", "Contact"]}
@@ -162,7 +162,7 @@ const Category = () => {
         <div className="flex flex-wrap gap-7"></div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
