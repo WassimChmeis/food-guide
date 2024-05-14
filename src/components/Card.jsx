@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useEffect } from "react";
 // import { LuBeef } from "react-icons/lu";
 // import { GiChickenOven } from "react-icons/gi";
@@ -48,7 +49,10 @@ const Card = ({ data }) => {
           )}
         </div> */}
 
-          <img src={data.strCategoryThumb} />
+          <LazyLoadImage
+            src={data.strCategoryThumb} // Image source
+            alt="Image Alt"
+          />
 
           <br />
           <h3 className="text-[23px] mb-3">

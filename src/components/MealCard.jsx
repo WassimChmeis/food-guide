@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MealCard = ({ data }) => {
   return (
@@ -9,7 +10,7 @@ const MealCard = ({ data }) => {
           className="    flex flex-col justify-center   "
           key={data.strMeal + data.idMeal}
         >
-          <img
+          <LazyLoadImage
             className=" rounded-xl rounded-bl-none rounded-br-none  w-full border-2 object-bottom "
             src={data.strMealThumb}
           />
