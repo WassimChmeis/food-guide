@@ -43,10 +43,13 @@ const Dish = () => {
     <div className=" min-h-screen">
       <Navbar
         bgColor={"bg-[#f8f8f8]"}
-        list={["Home", "About", "Project", "Contact"]}
+        list={["Home", "Instructions", "Ingredients", "Contact"]}
       />
 
-      <div className="bg-[#f8f8f8] text-center md:text-left px-3 md:px-12    ">
+      <div
+        id="Instructions"
+        className="bg-[#f8f8f8] text-center md:text-left px-3 md:px-12    "
+      >
         <div className="py-16"></div>
 
         <div className="flex lg:flex-row flex-col font-minor  gap-x-10 gap-y-3">
@@ -74,7 +77,10 @@ const Dish = () => {
           </h1>
           <p className="text-[#706f7b]  md:hidden ">{data.strInstructions}</p>
         </div>
-        <div className="flex flex-col justify-center  text-[30px] font-Madimi py-10">
+        <div
+          id="Ingredients"
+          className="flex flex-col justify-center  text-[30px] font-Madimi py-10"
+        >
           <div className=" w-full border-t-2 mt-6 "></div>
           <h1 className=" text-center mb-7  my-9">Ingredients </h1>
 
@@ -218,7 +224,9 @@ const Dish = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <div id="Contact">
+        <Footer />
+      </div>
     </div>
   );
 };

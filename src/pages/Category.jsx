@@ -64,9 +64,9 @@ const Category = () => {
     <div className=" min-h-screen">
       <Navbar
         bgColor={"bg-[#f8f8f8]"}
-        list={["Home", "About", "Project", "Contact"]}
+        list={["Home", "Description", "Explore", "Contact"]}
       />
-      <div className="bg-[#f8f8f8] font-Madimi ">
+      <div id="Description" className="bg-[#f8f8f8] font-Madimi ">
         <div className="py-8"></div>
         <div className=" flex mx-4 md:mx-10 gap-8  my-20   ">
           <div className=" text-center md:text-start md:w-1/2">
@@ -139,7 +139,10 @@ const Category = () => {
             )}
           </div>
         </div>
-        <div className="border-t-2 flex flex-col items-center mx-4 md:mx-8 ">
+        <div
+          id="Explore"
+          className="border-t-2 flex flex-col items-center mx-4 md:mx-8 "
+        >
           <h1 className="mt-10 text-[30px]">
             Explore <span className="text-red-500">{id}</span> Recipes
           </h1>
@@ -161,7 +164,9 @@ const Category = () => {
 
         <div className="flex flex-wrap gap-7"></div>
       </div>
-      <Footer />
+      <div id="Contact">
+        <Footer />
+      </div>
     </div>
   );
 };

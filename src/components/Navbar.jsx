@@ -18,11 +18,11 @@ const Navbar = ({ list, bgColor, searchableInput }) => {
 
   const handleClick = (event, sectionId) => {
     event.preventDefault();
-    // const section = document.getElementById(sectionId);
-    // setNav(!nav);
-    // if (section) {
-    //   section.scrollIntoView({ behavior: "smooth" });
-    // }
+    const section = document.getElementById(sectionId);
+    setNav(!nav);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
     console.log(event.target.text);
     if (event.target.text === "Home") {
       navigate("/");
@@ -36,7 +36,7 @@ const Navbar = ({ list, bgColor, searchableInput }) => {
       <Link to={"/"}>
         <h1 className=" font-bold text-xl flex items-center">
           Food Guide
-          <IoFastFood className="text-[45px] text-red-500" />
+          <IoFastFood className="text-[35px] text-red-500" />
         </h1>
       </Link>
 
@@ -48,7 +48,7 @@ const Navbar = ({ list, bgColor, searchableInput }) => {
         {list.map((item, index) => (
           <li key={item + index} className="p-3">
             <a
-              href="#"
+              href={`#${item}`}
               onClick={(event) => handleClick(event, item)}
               className="hover:text-blue-500 transition-colors "
             >

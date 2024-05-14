@@ -15,16 +15,22 @@ const Home = () => {
     <div className=" min-h-screen bg-[#f8f8f8]">
       <Navbar
         bgColor={"bg-[#f8f8f8]"}
-        list={["Home", "About", "Project", "Contact"]}
+        list={["Home", "Categories", "Contact"]}
       />
       <div className=" font-Madimi px-3 md:px-6">
         <div className=" pt-3"></div>
-        <Hero />
+        <div id="Home">
+          <Hero />
+        </div>
         <div className="mb-8 border-b-2"></div>
-        <Categories />
+        <div id="Categories">
+          <Categories />
+        </div>
       </div>
       <div className=" my-56"></div>
-      <Footer />
+      <div id="Contact">
+        <Footer />
+      </div>
     </div>
   );
 };
